@@ -17,7 +17,20 @@ public class GoofyNames {
 		System.out.println(name.toUpperCase());
 		// 3. Loop through each character of the name (steps 4 - 6).
 		// HINT: Use .length() to determine the number of characters in the String.
+		for (int i = 0; i < name.length(); i++) {
 
+			System.out.println(name.charAt(i));
+
+			String goofyname = name.substring(i, i + 1);
+
+			if (i % name.charAt(i) == 0) {
+
+				System.out.println(name.toUpperCase());
+
+			} else {
+
+			}
+		}
 		// 4. Create a String variable to store the next character of the name
 		// using .substring(start, end)
 		// HINT: replace 'start' and 'end' to get String with character at i
