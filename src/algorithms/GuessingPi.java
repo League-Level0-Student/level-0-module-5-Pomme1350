@@ -11,24 +11,22 @@ public class GuessingPi {
 	// 1. Make a main method and make sure your program can run
 	public static void main(String[] args) {
 		String Pi = "3.141592";
-		String minipi ="3.14159";
-	//	for(int i=0; i<3;i++) {
-	//		System.out.println("3.14159".charAt(i));
-	//	}
-		
-		for(int i =0; i<"3.14159".length(); i++) {
-			System.out.println("3.14159".charAt(i));
-		String digit1=JOptionPane.showInputDialog(null,"What is the next digit of pi?");
-			
-		
-			
-			
-				
-			
-			
-		}}}
-		
+		String minipi = "3.14159";
+		// for(int i=0; i<3;i++) {
+		// System.out.println("3.14159".charAt(i));
+		// }
 
+		for (int i = 0; i < "3.14159".length(); i++) {
+			System.out.println("3.14159".charAt(i));
+			String digit1 = JOptionPane.showInputDialog(null, "What is the next digit of pi?");
+
+			// if(digit1.equals("3")) {
+
+			// }
+
+		}
+	}
+}
 
 // 2. Make a String variable to hold the value of Pi.
 // Get the first few digits from http://www.piday.org/million/.
