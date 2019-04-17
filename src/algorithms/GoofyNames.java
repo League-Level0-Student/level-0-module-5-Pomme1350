@@ -21,15 +21,16 @@ public class GoofyNames {
 
 			System.out.println(name.charAt(i));
 
-			String goofyname = name.substring(i, i + 1);
+			String letter = name.substring(i, i + 1);
 
-			if (i % name.charAt(i) == 0) {
-
-				System.out.println(name.toUpperCase());
+			if (i % 2 == 0) {
+				goofyName += letter.toUpperCase();
 
 			} else {
-
+				goofyName += letter.toLowerCase();
 			}
+
+			JOptionPane.showMessageDialog(null, "your goofy name is " + goofyName);
 		}
 		// 4. Create a String variable to store the next character of the name
 		// using .substring(start, end)

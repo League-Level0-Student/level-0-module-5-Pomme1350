@@ -19,12 +19,12 @@ public class GuessingPi {
 		for (int i = 0; i < "3.14159".length(); i++) {
 			System.out.println("3.14159".charAt(i));
 			String digit1 = JOptionPane.showInputDialog(null, "What is the next digit of pi?");
+			if (digit1.equals("3")) {
 
-			// if(digit1.equals("3")) {
-
-			// }
+			}
 
 		}
+
 	}
 }
 
