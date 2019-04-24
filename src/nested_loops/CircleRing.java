@@ -21,23 +21,22 @@ public class CircleRing {
 		r2d2.setSpeed(200);
 		// 5. Do everything below here 360 times (use i as the counter)
 		for (int i = 0; i < 360; i++) {
-			if (i % 20 ==0 ) {
-				for(int j=0; j<360;i++) {
+			r2d2.move(3);
+			r2d2.turn(1);
+			if (i % 20 == 0) {
+				for (int j = 0; j < 360; j++) {
 					r2d2.move(1);
 					r2d2.turn(1);
 				}
-				}
-			r2d2.move(3);
-			r2d2.turn(1);
-			 
-				
+			}
+
 		}
 		// 6. Move the robot 3 pixels
 
 		// 7. Turn the robot 1 degree
 
 		// 8. If the counter i is divisible by 20 (hint: use mod operator %)..
-		
+
 		// 9. do steps 10 and 11 exactly 360 times (use j as the counter)
 
 		// 10. Move the robot 1 pixel

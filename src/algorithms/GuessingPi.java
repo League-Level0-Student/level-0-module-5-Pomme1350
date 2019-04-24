@@ -10,22 +10,24 @@ import javax.swing.JOptionPane;
 public class GuessingPi {
 	// 1. Make a main method and make sure your program can run
 	public static void main(String[] args) {
-		String Pi = "3.141592";
-		String minipi = "3.14159";
-		// for(int i=0; i<3;i++) {
-		// System.out.println("3.14159".charAt(i));
-		// }
+		String Pi = "3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862";
 
-		for (int i = 0; i < "3.14159".length(); i++) {
-			System.out.println("3.14159".charAt(i));
-			String digit1 = JOptionPane.showInputDialog(null, "What is the next digit of pi?");
-			if (digit1.equals("3")) {
+		System.out.println(Pi.charAt(0));
+		System.out.println(Pi.charAt(1));
+		System.out.println(Pi.charAt(2));
 
+		for (int i = 0; i < Pi.length(); i++) {
+			String boing = JOptionPane.showInputDialog(null, "What is the next digit of pi?");
+			if (boing.equals(Pi.charAt(i) + "")) {
+				JOptionPane.showMessageDialog(null, "Corect, keep going.");
+			} else {
+				JOptionPane.showMessageDialog(null, "Incorrect, start oveer!");
+				break;
 			}
 
 		}
-
 	}
+
 }
 
 // 2. Make a String variable to hold the value of Pi.
